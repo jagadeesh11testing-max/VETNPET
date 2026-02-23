@@ -17,13 +17,13 @@ test('VETNPET', async ({ page }) => {
   //await page.getByRole('textbox', {name:'address'}).fill("Address: 123 main street, lane lane")
   await page.locator('#address').fill("Address: 123 main street, fine lane lane")
   //await page.getByRole("textbox", {name: ''})
-  await page.getByRole("textbox", {name: 'Mobile Number:'}).fill("1234567890")
+  await page.getByRole("textbox", {name: 'Mobile Number:'}).fill("458225554")
   await page.getByRole('textbox', {name: 'Email Address:'}).fill("rockey1@gmail.com")
   //await page.locator('input[type="search"]').click() 
   //await page.locator('input[type="search"]').first().click();
 //  await page.getByRole("combobox", {name: 'Gender:'}).nth(1).click()
 //  await page.getByRole('textbox', {name: 'Age:'}).fill("03031993")
-  await page.locator('#gender').selectOption("Female")
+  await page.locator('#gender').selectOption("Male")
 //  await page.locator('#age').fill("03031993")
   await page.getByRole('textbox', {name: 'Breed:'}).fill("German shepherd")
 //  await page.locator("#select2-feeding_pattern-container").selectOption("Pet Food")
@@ -38,4 +38,5 @@ test('VETNPET', async ({ page }) => {
 await page.locator('#select2-feeding_pattern-container').click()
 await page.locator('li:has-text("Pet Food")').click()
 await page.getByRole('button',{name: 'Register Patient'}).click()
+
 });
