@@ -16,5 +16,6 @@ test('VETNPET', async ({ page }) => {
   //await page.getByRole('textbox', {name:'address'}).fill("Address: 123 main street, lane lane")
   await page.locator('#address').fill("Address: 123 main street, lane lane")
   //await page.getByRole("textbox", {name: ''})
+  await page.getByRole('textbox', {name:"Mobile Number:"}).fill("9876543210")
 
 });
