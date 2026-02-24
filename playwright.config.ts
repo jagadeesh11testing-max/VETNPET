@@ -32,6 +32,7 @@ export default defineConfig({
     trace: 'on',
     screenshot: 'on',
     headless : false,
+    video: 'on',
 
   },
 
